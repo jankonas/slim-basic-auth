@@ -259,6 +259,7 @@ final class HttpBasicAuthentication implements MiddlewareInterface
      * Set path where middleware should bind to.
      *
      * @param string|string[] $path
+     * @phpstan-ignore method.unused
      */
     private function path($path): void
     {
@@ -269,6 +270,7 @@ final class HttpBasicAuthentication implements MiddlewareInterface
      * Set path which middleware ignores.
      *
      * @param string[] $ignore
+     * @phpstan-ignore method.unused
      */
     private function ignore($ignore): void
     {
@@ -277,6 +279,8 @@ final class HttpBasicAuthentication implements MiddlewareInterface
 
     /**
      * Set the authenticator.
+     *
+     * @phpstan-ignore method.unused
      */
     private function authenticator(callable $authenticator): void
     {
@@ -287,6 +291,7 @@ final class HttpBasicAuthentication implements MiddlewareInterface
      * Set the users array.
      *
      * @param string[] $users
+     * @phpstan-ignore method.unused
      */
     private function users(array $users): void
     {
@@ -295,6 +300,8 @@ final class HttpBasicAuthentication implements MiddlewareInterface
 
     /**
      * Set the secure flag.
+     *
+     * @phpstan-ignore method.unused
      */
     private function secure(bool $secure): void
     {
@@ -305,6 +312,7 @@ final class HttpBasicAuthentication implements MiddlewareInterface
      * Set hosts where secure rule is relaxed.
      *
      * @param string[] $relaxed
+     * @phpstan-ignore method.unused
      */
     private function relaxed(array $relaxed): void
     {
@@ -313,6 +321,8 @@ final class HttpBasicAuthentication implements MiddlewareInterface
 
     /**
      * Set the handler which is called before other middlewares.
+     *
+     * @phpstan-ignore method.unused
      */
     private function before(Closure $before): void
     {
@@ -321,6 +331,8 @@ final class HttpBasicAuthentication implements MiddlewareInterface
 
     /**
      * Set the handler which is called after other middlewares.
+     *
+     * @phpstan-ignore method.unused
      */
     private function after(Closure $after): void
     {
@@ -329,6 +341,8 @@ final class HttpBasicAuthentication implements MiddlewareInterface
 
     /**
      * Set the handler which is if authentication fails.
+     *
+     * @phpstan-ignore method.unused
      */
     private function error(callable $error): void
     {
@@ -339,6 +353,7 @@ final class HttpBasicAuthentication implements MiddlewareInterface
      * Set the rules
      *
      * @param RuleInterface[] $rules
+     * @phpstan-ignore method.unused
      */
     private function rules(array $rules): void
     {
